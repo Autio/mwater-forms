@@ -25,6 +25,7 @@ module.exports = class AnswerValidator
         for item in question.items
           if not answer.value[item.id]?
             return true
+      # Ensure compartnment bag test question 
       if question._type == 'AquagenxCBTQuestion'
         if not answer.value.cbt?
           return true
